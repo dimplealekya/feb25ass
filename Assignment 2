@@ -1,0 +1,15 @@
+n=int(input())
+l=[]
+t=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+sum=0
+for i in range(n):
+    if l[i]!=0:
+        t.append(l[i])
+        sum=sum+l[i]
+for i in range(n):
+    if l[i]==0:
+        t.append(0)
+print(sum)
